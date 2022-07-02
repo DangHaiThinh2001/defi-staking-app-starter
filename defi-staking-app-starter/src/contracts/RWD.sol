@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 
-contract Tether {
-  string public name = 'Fake Tether';
-  string public symbol = 'USDT';
+contract RWD {
+  string public name = 'RWD Token';
+  string public symbol = 'RWD';
   uint public totalSupply = 1000000000000000000000000;
   uint8 public decimals = 18;
 
