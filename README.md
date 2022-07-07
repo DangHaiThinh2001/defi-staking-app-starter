@@ -1,4 +1,4 @@
-# defi-staking-app-starter
+# Decentralized Bank 
 
 ## To download me simply open up the terminal and run: 
 
