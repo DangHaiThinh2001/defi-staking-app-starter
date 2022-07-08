@@ -7,13 +7,13 @@ class Main extends Component{
             <div id='content' className='mt-3'>
                 <table className='table text-muted text-center'>
                     <thead>
-                        <tr style={{color: 'black'}}>
+                        <tr style={{color: 'white'}}>
                             <th scope='col'>Staking Balance</th>
                             <th scope='col'>Reward Balance</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style={{color: 'black'}}>
+                        <tr style={{color: 'white'}}>
                             <td>{window.web3.utils.fromWei(this.props.stakingBalance, 'Ether')} USDT</td>
                             <td>{window.web3.utils.fromWei(this.props.rwdBalance, 'Ether')} RWD</td>
                         </tr>
@@ -30,12 +30,12 @@ class Main extends Component{
                         }}  
                         className='mb-3'>
                             <div style={{boderSpace: '0 1em'}}>
-                                <label className='float-left' style={{marginLeft: '15px'}}><b>Stake Tokens</b></label>
-                                <span className='float-right' style={{marginRight: '8px'}}>
+                                <label className='float-left' style={{marginLeft: '30px'}}><b>Stake Tokens</b></label>
+                                <span className='float-right' style={{marginRight: '16px'}}>
                                     Balance: {window.web3.utils.fromWei(this.props.tetherBalance, 'Ether')}
                                 </span>
                                 <div className='input-group mb-4'>
-                                    <input ref={(input) =>{this.input = input}} type='text' placeholder='0' required/>
+                                    <input ref={(input) =>{this.input = input}} type='text' placeholder='0' style={{marginLeft: '15px'}} required/>
                                     <div className='input-group-open'>
                                         <div className='input-group-text'>
                                             <img src={tether} alt='tether' height={'32'}/>
