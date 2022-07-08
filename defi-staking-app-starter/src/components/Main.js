@@ -52,7 +52,6 @@ class Main extends Component{
                         onClick={(event) =>{
                             event.preventDefault()
                             this.props.unstakeTokens()
-                            window.location.reload()
                         }}
                         className='btn btn-primary btn-lg btn-block'>WITHDRAW</button>
                         <div className='card-body text-center' style={{color:'blue'}}>
