@@ -12,7 +12,7 @@ class Airdrop extends Component{
 
     startTimer() {
         if(this.timer === 0 && this.state.seconds > 0){
-            this.timer = setInterval(this.countDown(), 1000)
+            this.timer = setInterval(this.countDown, 1000)
         }
     }
 
@@ -26,7 +26,7 @@ class Airdrop extends Component{
         })
 
         // return to default when second hit 0
-        if(seconds === 0){
+        if(seconds < 1){
             clearInterval(this.timer)
         }
     }
@@ -58,7 +58,7 @@ class Airdrop extends Component{
     airdropRewardToken(){
         let stakingB = this.props.stakingBalance
 
-        if(stakingB >= window.web3.utils.fromWei('50', 'Ether')){
+        if(stakingB >= window.web3.utils.toWei('25', 'Ether')){
             this.startTimer()
         }
     }
